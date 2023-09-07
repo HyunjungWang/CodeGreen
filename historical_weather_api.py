@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
-
-
 import importlib
 import DE_zipcode
 import pandas as pd
@@ -43,9 +40,6 @@ def Germany_zip():
     print(data)
 
 
-# In[5]:
-
-
 def Sweden_zip():
     """
     Collect historical weather data in Sweden combining with the zip code
@@ -68,11 +62,6 @@ def Sweden_zip():
     data = pd.concat(dfs, axis=1)
     #data.to_csv('SE_weather_zip_code.csv', index_label='timestamp')
     print(data)
-
-
-
-# In[6]:
-
 
 def Germany_lat_lon():
     """
@@ -98,11 +87,6 @@ def Germany_lat_lon():
     #data.to_csv('DE_weather_lat_lon.csv', index_label='timestamp')
     print(data)
         
-
-
-
-# In[7]:
-
 
 #call the function
 Germany_zip()
