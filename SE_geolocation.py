@@ -1,15 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[19]:
-
-
 #install entsoe python package
 pip install entsoe-py
-
-
-# In[1]:
-
 
 #import libraries
 from entsoe import EntsoeRawClient
@@ -17,9 +10,6 @@ import pandas as pd
 from lxml import etree
 from googletrans import Translator
 import requests
-
-
-# In[2]:
 
 
 client = EntsoeRawClient(api_key='be7edc85-62fe-4759-b56c-c4122c275f43')
@@ -31,10 +21,6 @@ end = pd.Timestamp('2022-06-02', tz='Europe/Stockholm')
 
 # Make the query to get the installed generation capacity per unit
 response = client.query_installed_generation_capacity_per_unit(country_code, start, end)
-
-
-
-# In[3]:
 
 
 # Remove the encoding declaration from the XML response
@@ -62,10 +48,6 @@ for timeseries_element in timeseries_elements:
 
 print(registered_resource_names)
 
-
-
-
-# In[45]:
 
 
 #location_names = ['Lemnhult', 'Kronoberget', 'The hill sore', 'Höstkullen north', 'Markbygden 2 North', 'Må Larberget', 'Eken', 'Bäckhammar', 'Kråktorpet', 'Windground Björkhöjden', 'Björkvattnet', 'Ä Skålen', 'Ã Mot-Lingbo', 'Blaiken', 'The wind farm winds', 'Markbygdenett', 'Pool', 'Blacknight', 'The gonfish']
