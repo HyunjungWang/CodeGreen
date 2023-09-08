@@ -9,9 +9,12 @@ The most important factor to predict the renewable energy percentage is the weat
 The sub-task here is predicting the renewable energy percentage of total energy production with the help of historical weather data.
 
 
-## Features
+## Prerequisites
+### PIP
 
-List the key features or functionalities of your project. This section helps users understand what your project can do.
+
+
+## Usage
 
 -DE_zipcode.py
 
@@ -28,27 +31,8 @@ List the key features or functionalities of your project. This section helps use
 -Germany_lat_lon_regressor.ipynb
 
 
-- Feature 2
-- Feature 3
-
-## Getting Started
-
-Provide instructions for users on how to get started with your project. Include details on prerequisites and installation steps.
-
-### Prerequisites
-
-List any software, libraries, or tools that users need to have installed before they can use your project.
-
-
-## Usage
-
-Explain how to use your project. Provide examples, code snippets, or screenshots if necessary.
-
 
 ## Acknowledgments
 
 entsoeAPI.py is provdie by team member, Shubh Vardhan Jain.
 
----
-
-Feel free to customize and expand upon this template to create a comprehensive README for your GitHub repository. Markdown is a lightweight markup language that allows you to format text easily.
