@@ -9,9 +9,10 @@ The sub-task here is predicting the renewable energy percentage of total energy 
 
 ## Prerequisites
 ### PIP
-Install Entose python to call the location of power plants
+-Install Entose python to call the location of power plants
+pip install entsoe-py
 
-Install geopandas to visualize the Germany map
+-Install geopandas to visualize the Germany map
 
 
 
