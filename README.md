@@ -72,7 +72,13 @@ Plotting the prediction compared with the actual renewable energy percentage and
 
 Plotting the top 5 important locations that affect the renewable energy percentage
 
-- entsoeAPI: calculating a country's renewable energy percentage
+- entsoeAPI:
+
+Retrieving historical energy production
+
+Forecasting energy production
+
+Calculating a country's renewable energy percentage
 
 ## Acknowledgments
 
