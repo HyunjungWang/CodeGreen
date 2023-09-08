@@ -20,10 +20,15 @@ Identifying key locations that have the most significant impact on renewable ene
     ```
     pip install entsoe-py
     ```
+- Install Python wrapper for the OpenWeatherMap API.
+    ```
+    pip install pyowm
+    ```
 - Install geopandas to visualize the Germany map
     ```
     pip install geopandas
     ```
+
 
 
 
