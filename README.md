@@ -1,5 +1,3 @@
-# Bionetwork project
-
 # Codegreen
 ## Predicting the renewable energy % based on historical weather data
 
@@ -11,25 +9,39 @@ The sub-task here is predicting the renewable energy percentage of total energy 
 
 ## Prerequisites
 ### PIP
+Install Entose python to call the location of power plants
+
+Install geopandas to visualize the Germany map
 
 
 
 ## Usage
 
--DE_zipcode.py
+-DE_zipcode.py: Collecting Germany historical weather data and forecast weather data using Api
 
--SE_zipcode.py
+-SE_zipcode.py: Collecting Sweden historical weather data and forecast weather data using Api
 
--SE_geolocation.py
+-SE_geolocation.py: Finding the location of solar plants and wind farms
 
--historical_weatehr_api.py
+-historical_weatehr_api.py: Combining historical weather data with the location information
 
--Germany_regressor.ipynb
+-Germany_regressor.ipynb: 
+Training a decision tree regressor and random forest regressor to predict the renewable energy percentage in Germany
+Using a historical weather dataset contatining the zip code
+Ploting the prediction comparing with the acutal renewable energy percentage and the forecast of reneable energy percentage
+Ploting the top 5 important locations that affect the renewable energy percentage
 
 -Sweden_regressor.ipynb
+Training a decision tree regressor and random forest regressor to predict the renewable energy percentage in Sweden
+Using a historical weather dataset contatining the zip code
+Ploting the prediction comparing with the acutal renewable energy percentage and the forecast of reneable energy percentage
+Ploting the top 5 important locations that affect the renewable energy percentage
 
 -Germany_lat_lon_regressor.ipynb
-
+Training a decision tree regressor and random forest regressor to predict the renewable energy percentage
+Using a historical weather dataset contatining the latitude and the longitude.
+Ploting the prediction comparing with the acutal renewable energy percentage and the forecast of reneable energy percentage
+Ploting the top 5 important locations that affect the renewable energy percentage
 
 
 ## Acknowledgments
