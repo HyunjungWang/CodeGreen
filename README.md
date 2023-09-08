@@ -1,11 +1,18 @@
 # Codegreen
-## Predicting the renewable energy % based on historical weather data
+Computing emits carbon.
+One of the ways to reduce carbon emissions due to computing is to shift the timing of performing
+computations to periods when more energy is sourced from renewable sources.
 
 Project Codegreen estimates the optimal time point, which fulfills the renewable energy requirements. 
 For example, when a user asks for the start time for 2-hour computation in Germany with 30% renewable energy, Codegreen provides the optimal time of day for the computation. 
-The most important factor to predict the renewable energy percentage is the weather.
-The sub-task here is predicting the renewable energy percentage of total energy production with the help of historical weather data.
 
+## Predicting the renewable energy percentage based on historical weather data
+
+The most important factor to predict the renewable energy percentage is the weather.
+The sub-task of the project Codegreen is predicting the renewable energy percentage of total energy production with the help of historical weather data. 
+
+## Identifying key locations that affect renewable energy perenctage 
+Identifying key locations that have the most significant impact on renewable energy generation is crucial for optimizing server placement and reducing the carbon footprint of data centers. By strategically placing our client's servers in areas with abundant renewable energy sources, we can contribute to a more sustainable and environmentally friendly operation.
 
 ## Prerequisites
 ### PIP
