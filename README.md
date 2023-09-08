@@ -39,19 +39,26 @@ pip install geopandas
 -Germany_regressor.ipynb: 
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage in Germany
 Using a historical weather dataset contatining the zip code
+
 Ploting the prediction comparing with the acutal renewable energy percentage and the forecast of reneable energy percentage
+
 Ploting the top 5 important locations that affect the renewable energy percentage
 
 -Sweden_regressor.ipynb
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage in Sweden
+
 Using a historical weather dataset contatining the zip code
+
 Ploting the prediction comparing with the acutal renewable energy percentage and the forecast of reneable energy percentage
+
 Ploting the top 5 important locations that affect the renewable energy percentage
 
 -Germany_lat_lon_regressor.ipynb
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage
 Using a historical weather dataset contatining the latitude and the longitude.
+
 Ploting the prediction comparing with the acutal renewable energy percentage and the forecast of reneable energy percentage
+
 Ploting the top 5 important locations that affect the renewable energy percentage
 
 
