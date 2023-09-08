@@ -13,6 +13,7 @@ The sub-task here is predicting the renewable energy percentage of total energy 
 pip install entsoe-py
 
 -Install geopandas to visualize the Germany map
+pip install geopandas
 
 
 
