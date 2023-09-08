@@ -25,7 +25,7 @@ def Germany_zip():
 
     # Loop through each zip code
     for zip_code in zip_codes:
-         # Get weather forecast data for the current zip code
+        # Get historical weather data for the current zip code
         df = DE_zipcode.historical(zip_code)
 
         # Rename the columns to include the zip code in the column names
@@ -49,7 +49,7 @@ def Sweden_zip():
     zip_codes = ["28","57", "68", "70","82", "83","84","92","95"]
     # Loop through each zip code
     for zip_code in zip_codes:
-        # Get weather forecast data for the current zip code
+        # Get historical weather data for the current zip code
         df = SE_zipcode.historical(zip_code)
 
         # Rename the columns to include the zip code in the column names
