@@ -11,16 +11,16 @@ For example, when a user asks for the start time for a 2-hour computation in Ger
 The most important factor to predict the renewable energy percentage is the weather.
 The sub-task of the project Codegreen is predicting the renewable energy percentage of total energy production with the help of historical weather data. 
 
-## Identifying key locations that affect renewable energy percentage 
+## Identifying key locations that affect the renewable energy percentage 
 Identifying key locations that have the most significant impact on renewable energy generation is crucial for optimizing server placement and reducing the carbon footprint of data centers. By strategically placing our client's servers in areas with abundant renewable energy sources, we can contribute to a more sustainable and environmentally friendly operation.
 
 ## Prerequisites
 ### PIP
--Install Entose python to call the location of power plants
+- Install Entose python to call the location of power plants
     ```
     pip install entsoe-py
     ```
--Install geopandas to visualize the Germany map
+- Install geopandas to visualize the Germany map
     ```
     pip install geopandas
     ```
