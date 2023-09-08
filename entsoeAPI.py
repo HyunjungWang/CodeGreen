@@ -18,13 +18,12 @@ def getAPIToken():
     Returns:
         str: The ENTSO-E API token.
     """
-   
-  variable_name = "ENTSOE_TOKEN"
-  value = "15ce0b90-8cef-44c5-8204-a66ea194cf40" #TODO read this from env file
+    variable_name = "ENTSOE_TOKEN"
+    value = "15ce0b90-8cef-44c5-8204-a66ea194cf40"  # TODO: Read this from an environment variable
 
-  if value is None:
-    raise ValueError(f"The required environment variable '{variable_name}' is not set.")
-  return value
+    if value is None:
+        raise ValueError(f"The required environment variable '{variable_name}' is not set.")
+    return value
 
 def entsoe_getActualGenerationDataPerProductionType(options={"country": "", "start": "", "end": ""}):
     """
@@ -165,7 +164,7 @@ def entsoe_getDayAheadGenerationForecastsWindSolar(options={"country": "", "star
 
 
 def getActualRenewableValues(options={"country":"","start":"","end":"", "interval60":True}):
-     """
+    """
     Retrieve actual renewable energy values based on the provided options.
 
     Args:
