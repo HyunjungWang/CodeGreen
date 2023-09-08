@@ -19,12 +19,10 @@ Identifying key locations that have the most significant impact on renewable ene
 -Install Entose python to call the location of power plants
     ```
     pip install entsoe-py
-
     ```
 -Install geopandas to visualize the Germany map
     ```
     pip install geopandas
-
     ```
 
 
@@ -40,7 +38,8 @@ Identifying key locations that have the most significant impact on renewable ene
 
 - historical_weatehr_api.py: Combining historical weather data with the location information
 
-- Germany_regressor.ipynb: 
+- Germany_regressor.ipynb
+  
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage in Germany
 Using a historical weather dataset containing the zip code
 
@@ -49,6 +48,7 @@ Plotting the prediction compared with the actual renewable energy percentage and
 Plotting the top 5 important locations that affect the renewable energy percentage
 
 - Sweden_regressor.ipynb
+  
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage in Sweden
 
 Using a historical weather dataset containing the zip code
