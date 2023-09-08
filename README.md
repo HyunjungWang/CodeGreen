@@ -16,7 +16,7 @@ Identifying key locations that have the most significant impact on renewable ene
 
 ## Prerequisites
 ### PIP
-- Install Entose python to call the location of power plants
+- Install Entose python package to call the location of power plants
     ```
     pip install entsoe-py
     ```
