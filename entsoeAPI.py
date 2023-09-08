@@ -10,7 +10,15 @@ logging.basicConfig(filename='entsoe.log', format='%(asctime)s - %(levelname)s -
 
 DEBUG=True
 
+# Function to get the ENTSO-E API token
 def getAPIToken():
+    """
+    Get the ENTSO-E API token from the environment.
+
+    Returns:
+        str: The ENTSO-E API token.
+    """
+   
   variable_name = "ENTSOE_TOKEN"
   value = "15ce0b90-8cef-44c5-8204-a66ea194cf40" #TODO read this from env file
 
@@ -19,6 +27,15 @@ def getAPIToken():
   return value
 
 def entsoe_getActualGenerationDataPerProductionType(options={"country": "", "start": "", "end": ""}):
+    """
+    Retrieve actual energy generation data per production type from the ENTSO-E API.
+
+    Args:
+        options (dict): A dictionary containing options for the query, including "country", "start", and "end" dates.
+
+    Returns:
+        dict: A dictionary containing the retrieved data and duration in minutes.
+    """
     logging.info(options)
     
     startDay = pd.Timestamp(options["start"], tz='UTC')
@@ -71,6 +88,15 @@ def entsoe_getActualGenerationDataPerProductionType(options={"country": "", "sta
 
 
 def entsoe_getDayAheadAggregatedGeneration(options={"country": "", "start": "", "end": ""}):
+    """
+    Retrieve day-ahead aggregated energy generation data from the ENTSO-E API.
+
+    Args:
+        options (dict): A dictionary containing options for the query, including "country", "start", and "end" dates.
+
+    Returns:
+        dict: A dictionary containing the retrieved data and duration in minutes.
+    """
     client = entsoePandas(api_key=getAPIToken())
     data = client.query_generation_forecast(options["country"], start=pd.Timestamp(options["start"], tz='UTC'), end=pd.Timestamp(options["end"], tz='UTC'))
     if isinstance(data,pd.Series):
@@ -99,6 +125,15 @@ def entsoe_getDayAheadAggregatedGeneration(options={"country": "", "start": "", 
 
 
 def entsoe_getDayAheadGenerationForecastsWindSolar(options={"country": "", "start": "", "end": ""}):
+    """
+    Retrieve day-ahead generation forecasts for wind and solar energy from the ENTSO-E API.
+
+    Args:
+        options (dict): A dictionary containing options for the query, including "country", "start", and "end" dates.
+
+    Returns:
+        dict: A dictionary containing the retrieved data and duration in minutes.
+    """
     client = entsoePandas(api_key=getAPIToken())
     data = client.query_wind_and_solar_forecast(options["country"],  start=pd.Timestamp(options["start"], tz='UTC'), end=pd.Timestamp(options["end"], tz='UTC'))
 
@@ -130,6 +165,15 @@ def entsoe_getDayAheadGenerationForecastsWindSolar(options={"country": "", "star
 
 
 def getActualRenewableValues(options={"country":"","start":"","end":"", "interval60":True}):
+     """
+    Retrieve actual renewable energy values based on the provided options.
+
+    Args:
+        options (dict): A dictionary containing options for the query, including "country", "start", "end", and "interval60" (whether to convert data to 60-minute intervals).
+
+    Returns:
+        dict: A dictionary containing the retrieved data and duration in minutes.
+    """
     totalRaw = entsoe_getActualGenerationDataPerProductionType(options)
     total = totalRaw["data"]
     duration = totalRaw["duration"]
@@ -160,6 +204,15 @@ def getActualRenewableValues(options={"country":"","start":"","end":"", "interva
 
 
 def getRenewableForecast(options={"country": "", "start": "", "end": "" }):
+    """
+    Retrieve renewable generation forecasts based on the provided options.
+
+    Args:
+        options (dict): A dictionary containing options for the query, including "country", "start", and "end" dates.
+
+    Returns:
+        dict: A dictionary containing the retrieved data and duration in minutes.
+    """
     # print(options)
     totalRaw = entsoe_getDayAheadAggregatedGeneration(options)
     if totalRaw["duration"] != 60 :
