@@ -77,7 +77,7 @@ def weatherforecast(zipcode):
 
 
 def historical(zipcode):
-     """
+    """
     Get historical weather data for a given zip code.
 
     Parameters:
