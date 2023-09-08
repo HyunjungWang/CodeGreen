@@ -76,7 +76,7 @@ Plotting the top 5 important locations that affect the renewable energy percenta
 
 Retrieving historical energy production
 
-Forecasting energy production
+Retrieving day ahead energy production
 
 Calculating a country's renewable energy percentage
 
