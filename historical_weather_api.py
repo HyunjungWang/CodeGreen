@@ -2,7 +2,6 @@
 # coding: utf-8
 
 import importlib
-import DE_zipcode
 import pandas as pd
 from requests.sessions import DEFAULT_REDIRECT_LIMIT
 import requests
@@ -10,6 +9,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta, date
 import json
 import numpy as np
+import DE_zipcode
 importlib.reload(DE_zipcode)
 import SE_zipcode
 importlib.reload(SE_zipcode)
