@@ -17,26 +17,30 @@ Identifying key locations that have the most significant impact on renewable ene
 ## Prerequisites
 ### PIP
 -Install Entose python to call the location of power plants
+    ```
+    pip install entsoe-py
 
-pip install entsoe-py
-
+    ```
 -Install geopandas to visualize the Germany map
+    ```
+    pip install geopandas
 
-pip install geopandas
+    ```
+
 
 
 
 ## Usage
 
--DE_zipcode.py: Collecting Germany's historical weather data and forecast weather data using API from Open-Meteo
+- DE_zipcode.py: Collecting Germany's historical weather data and forecast weather data using API from Open-Meteo
 
--SE_zipcode.py: Collecting Sweden's historical weather data and forecast weather data using API from Open-Meteo
+- SE_zipcode.py: Collecting Sweden's historical weather data and forecast weather data using API from Open-Meteo
 
--SE_geolocation.py: Finding the location of solar plants and wind farms
+- SE_geolocation.py: Finding the location of solar plants and wind farms
 
--historical_weatehr_api.py: Combining historical weather data with the location information
+- historical_weatehr_api.py: Combining historical weather data with the location information
 
--Germany_regressor.ipynb: 
+- Germany_regressor.ipynb: 
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage in Germany
 Using a historical weather dataset containing the zip code
 
@@ -44,7 +48,7 @@ Plotting the prediction compared with the actual renewable energy percentage and
 
 Plotting the top 5 important locations that affect the renewable energy percentage
 
--Sweden_regressor.ipynb
+- Sweden_regressor.ipynb
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage in Sweden
 
 Using a historical weather dataset containing the zip code
@@ -53,7 +57,7 @@ Plotting the prediction compared with the actual renewable energy percentage and
 
 Plotting the top 5 important locations that affect the renewable energy percentage
 
--Germany_lat_lon_regressor.ipynb
+- Germany_lat_lon_regressor.ipynb
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage
 
 Using a historical weather dataset containing the latitude and the longitude.
@@ -62,6 +66,7 @@ Plotting the prediction compared with the actual renewable energy percentage and
 
 Plotting the top 5 important locations that affect the renewable energy percentage
 
+- entsoeAPI: calculating a country's renewable energy percentage
 
 ## Acknowledgments
 
