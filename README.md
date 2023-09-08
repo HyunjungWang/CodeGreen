@@ -76,5 +76,5 @@ Plotting the top 5 important locations that affect the renewable energy percenta
 
 ## Acknowledgments
 
-entsoeAPI.py is provdied by team member, Shubh Vardhan Jain.
+entsoeAPI.py and uitl.py is provdied by team member, Shubh Vardhan Jain.
 
