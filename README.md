@@ -58,6 +58,7 @@ Plotting the prediction compared with the actual renewable energy percentage and
 Plotting the top 5 important locations that affect the renewable energy percentage
 
 - Germany_lat_lon_regressor.ipynb
+  
 Training a decision tree regressor and random forest regressor to predict the renewable energy percentage
 
 Using a historical weather dataset containing the latitude and the longitude.
