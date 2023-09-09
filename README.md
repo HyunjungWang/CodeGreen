@@ -35,6 +35,8 @@ Identifying key locations that have the most significant impact on renewable ene
 
 ## Usage
 
+### Data collection
+
 - DE_zipcode.py: Collecting Germany's historical weather data and forecast weather data using API from Open-Meteo
 
 - SE_zipcode.py: Collecting Sweden's historical weather data and forecast weather data using API from Open-Meteo
@@ -42,6 +44,16 @@ Identifying key locations that have the most significant impact on renewable ene
 - SE_geolocation.py: Finding the location of solar plants and wind farms
 
 - historical_weatehr_api.py: Combining historical weather data with the location information
+
+- entsoeAPI
+
+Retrieving historical energy production
+
+Retrieving day ahead energy production
+
+Calculating a country's renewable energy percentage
+
+### Training a predictive models
 
 - Germany_regressor.ipynb
   
@@ -72,13 +84,7 @@ Plotting the prediction compared with the actual renewable energy percentage and
 
 Plotting the top 5 important locations that affect the renewable energy percentage
 
-- entsoeAPI:
 
-Retrieving historical energy production
-
-Retrieving day ahead energy production
-
-Calculating a country's renewable energy percentage
 
 ## Acknowledgments
 
