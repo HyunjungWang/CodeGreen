@@ -111,7 +111,7 @@ Use the Jupyter notebooks to train and evaluate machine learning models for fore
 ## 📍 Location Feature Visualization
 
 To understand which geographic regions most influence the renewable energy percentage, we analyzed **feature importances** from the Random Forest model. This helps pinpoint **key locations** where weather variables (like windspeed or temperature) have the strongest impact on renewable energy generation.
-
+![Image](https://github.com/user-attachments/assets/e242c441-41db-4b8e-912e-28d6f332661a)
 
 ### 📊 Observed Trends
 
